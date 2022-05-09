@@ -1,0 +1,59 @@
+.fill-height{
+    height: 70vh;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+.menu-image {
+    max-height: 5vh;
+}
+
+.index-image {
+    max-height: 25vh;
+}
+.circle{width:95px;
+height: 300px;
+border: none;
+    margin-top: 50px;
+}
+.circle2{width:95px;
+height: 300px;
+border: none;
+margin-left: 100px;
+margin-top: -300px;
+
+}
+.circle3{width:95px;
+height: 300px;
+    margin-top: -300px;
+    margin-left: 200px;
+}
+
+
+
+
+

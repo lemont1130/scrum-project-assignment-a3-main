@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Hello, {{ current_user.username }}!</h1>
+    <br>
+    <div class="box">
+      <div class="row content">
+        <table class="table fill-height">
+            <tbody>
+                <tr>
+                  <td class="text-center"><image class="index-image" src='{{ url_for("get_static_image", image_type="your_restaurant") }}'></image></td>
+                  <td class="text-center"><image class="index-image" src='{{ url_for("get_static_image", image_type="table") }}'></image></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><a href='{{ url_for("profile", id=current_user.id) }}'>Your Restaurant</a></td>
+                  <td class="text-center"><a href='{{ url_for("table_management") }}'>Tables</a></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><image class="index-image" src='{{ url_for("get_static_image", image_type="menu") }}'></image></td>
+                  <td class="text-center"><image class="index-image" src='{{ url_for("get_static_image", image_type="order") }}'></image></td>
+                </tr>
+                <tr>
+                  <td class="text-center"><a href='{{ url_for("restaurant_menu") }}'>Menu</a></td>
+                  <td class="text-center"><a href='{{ url_for("in_progress") }}'>Order List</a></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+{% endblock %}}
